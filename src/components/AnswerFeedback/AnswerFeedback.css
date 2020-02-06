@@ -5,11 +5,19 @@
   color: rgba(255, 255, 255, 0.8);
 }
 
+.feedback-total-score {
+  font-size: 1.3rem;
+}
+
 .DisplayScore {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 1rem;
+}
+
+.DisplayScore h2 {
+  font-size: 2.5rem;
 }
 
 .DisplayFeedback {
@@ -21,4 +29,8 @@
   max-width: 40rem;
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.feedback-em {
+  font-size: 2rem;
 }

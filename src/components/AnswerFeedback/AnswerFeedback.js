@@ -17,7 +17,7 @@ export default function AnswerFeedback(props) {
   return (
     <div className="feedback">
       <div className="DisplayScore">
-        <p>
+        <p className="feedback-total-score">
           Your total score is:{` ${props.nextWord.totalScore}`}
         </p>
 
@@ -25,7 +25,19 @@ export default function AnswerFeedback(props) {
       </div>
       <div className="DisplayFeedback">
         <p className="feedback-p">
-          {`The correct translation for ${props.currentWord.nextWord} was ${props.answer} and you chose ${props.guess}!`}
+          The correct translation for {' '}
+          <span className="feedback-em">
+            {props.currentWord.nextWord}{' '}
+          </span>
+          was {' '}
+          <span className="feedback-em green">
+            {props.answer} {' '}
+          </span>
+          and you chose {' '}
+          <span className={`feedback-em ${guessColor}`}>
+            {props.guess}
+          </span>
+          !
         </p>
       </div>
       <button 
